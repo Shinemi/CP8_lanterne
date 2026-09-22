@@ -26,3 +26,15 @@ L’API est disponible sur `http://localhost:3000`.
 - `GET /api/curiosities/:slug`
 
 Le déploiement cible Vercel. Les variables d’environnement sont listées dans `.env.example`. Aucune donnée sensible ne doit être ajoutée au dépôt.
+
+
+## API déployée
+
+URL publique : https://cp-8-lanterne.vercel.app
+
+Exemples de routes à tester :
+
+- https://cp-8-lanterne.vercel.app/api/health
+- https://cp-8-lanterne.vercel.app/api/curiosities
+- https://cp-8-lanterne.vercel.app/api/curiosities?q=canal&limit=5
+- https://cp-8-lanterne.vercel.app/api/curiosities/passage-bleu
