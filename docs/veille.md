@@ -28,3 +28,105 @@ Le projet CP8_lanterne cible actuellement `"node": ">=20"` dans `package.json`. 
 ### Décision prise pour le projet
 
 Mettre à jour le champ `engines` de `package.json` vers Node.js 22 ou 24 avant le 1er octobre 2026, et vérifier que la version sélectionnée dans les Project Settings Vercel correspond. Retester ensuite les routes de l'API (`/api/health`, `/api/curiosities`, etc.) pour confirmer qu'aucune régression n'est introduite par le changement de version.
+
+# Tutoriel rapide : passer de Node.js 20 à Node.js 24
+
+Le projet utilise **pnpm** (`pnpm-lock.yaml`) et non Yarn.
+
+## 1. Vérifier la version actuelle
+
+Dans un terminal :
+
+```bash
+node -v
+pnpm -v
+```
+
+Si Node.js 20 est affiché, il faut effectuer la mise à jour.
+
+## 2. Installer Node.js 24
+
+Si **nvm** n'est pas installé ou ne fonctionne pas sous Windows, le plus simple est d'utiliser l'installateur officiel de Node.js.
+
+Télécharger Node.js 24 depuis :
+
+https://nodejs.org/
+
+Installer la version **Node.js 24 LTS**, puis redémarrer le terminal.
+
+Vérifier ensuite :
+
+```bash
+node -v
+```
+
+Le résultat doit commencer par :
+
+```text
+v24
+```
+
+## 3. Modifier `package.json`
+
+Dans le fichier `package.json`, remplacer :
+
+```json
+"engines": {
+  "node": ">=20"
+}
+```
+
+par :
+
+```json
+"engines": {
+  "node": ">=24"
+}
+```
+
+Cela indique que le projet nécessite désormais **Node.js 24 ou une version supérieure**.
+
+## 4. Réinstaller les dépendances
+
+Comme le projet utilise **pnpm** :
+
+```bash
+pnpm install
+```
+
+Il ne faut **pas supprimer `pnpm-lock.yaml`**.
+
+## 5. Modifier la version Node.js sur Vercel
+
+Dans le projet Vercel :
+
+**Project Settings → General → Node.js Version**
+
+Sélectionner **Node.js 24.x**.
+
+La version configurée sur Vercel doit correspondre à celle demandée dans `package.json`.
+
+## 6. Tester le projet
+
+Lancer l'API localement avec la commande habituelle du projet et vérifier notamment :
+
+* `/api/health`
+* `/api/curiosities`
+
+Puis effectuer un nouveau déploiement sur Vercel.
+
+## 7. Vérification finale
+
+Vérifier que :
+
+```bash
+node -v
+```
+
+retourne **Node.js 24**, que :
+
+```bash
+pnpm install
+```
+
+fonctionne correctement et que le déploiement Vercel s'effectue sans erreur.
