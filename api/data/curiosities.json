@@ -1,0 +1,44 @@
+[
+  {
+    "slug": "passage-bleu",
+    "title": "Le passage bleu",
+    "city": "Nantes",
+    "category": "architecture",
+    "description": "Une galerie discrète au bord du canal, reconnaissable à ses carreaux bleus."
+  },
+  {
+    "slug": "jardin-des-brumes",
+    "title": "Le jardin des brumes",
+    "city": "Nantes",
+    "category": "nature",
+    "description": "Un jardin partagé où les aromatiques sont entretenues avant l’ouverture des bureaux."
+  },
+  {
+    "slug": "lettres-de-la-halle",
+    "title": "Les lettres de la halle",
+    "city": "Rennes",
+    "category": "mémoire",
+    "description": "Une ancienne halle dont les poutres portent encore les initiales des premiers artisans."
+  },
+  {
+    "slug": "escalier-des-oiseaux",
+    "title": "L’escalier des oiseaux",
+    "city": "Angers",
+    "category": "détail",
+    "description": "Une rampe en pierre décorée de petits oiseaux que l’on ne voit qu’en descendant."
+  },
+  {
+    "slug": "fontaine-des-reflets",
+    "title": "La fontaine des reflets",
+    "city": "Tours",
+    "category": "eau",
+    "description": "Une fontaine basse qui transforme les façades voisines en paysage mouvant."
+  },
+  {
+    "slug": "cabane-des-cartographes",
+    "title": "La cabane des cartographes",
+    "city": "La Rochelle",
+    "category": "mémoire",
+    "description": "Une ancienne remise de quai devenue un repère pour les promeneurs curieux."
+  }
+]
