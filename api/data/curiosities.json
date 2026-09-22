@@ -40,5 +40,12 @@
     "city": "La Rochelle",
     "category": "mémoire",
     "description": "Une ancienne remise de quai devenue un repère pour les promeneurs curieux."
+  },  
+  {
+    "slug": "chateau-de-forcalqueiret",
+    "title": "Chateau de forcalqueiret",
+    "city": "Forcalqueiret",
+    "category": "Ruines",
+    "description": "Ruines d'un ancien château localisé dans les collines de Forcalqueiret"
   }
 ]
