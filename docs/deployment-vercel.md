@@ -169,12 +169,23 @@ Appeler `GET /api/curiosities` ou `GET /api/curiosities/<slug-du-château>`. Vé
 Vercel propose une fonction **Instant Rollback**.
 
 1. Ouvrir le dashboard du projet, onglet **Deployments**.
+
 2. Repérer le déploiement stable précédent.
+
 3. Cliquer sur **Rollback**. Une boîte de dialogue s'ouvre.
+
+![Instant rollback](../preuve/instant%20rollback%20selection.png)
+
 4. Elle affiche deux déploiements, l'ancien et le nouveau, côte à côte.
+
 5. Écrire une raison dans le champ prévu. Exemple : *« L'ajout d'une curiosité était un test visant à manipuler la fonction de rollback de Vercel »*.
-6. Cliquer sur **Continue**.
-7. Vercel réattribue le domaine de production vers le déploiement précédent. Aucun nouveau build n'est nécessaire.
-8. Vérifier le retour avec `GET /api/curiosities`. La curiosité ajoutée par le commit `7e1c125` ne doit plus apparaître.
 
 ![Instant rollback](../preuve/rollback%20vercel.png)
+
+6. Cliquer sur **Continue**.
+
+7. Vercel réattribue le domaine de production vers le déploiement précédent. Aucun nouveau build n'est nécessaire.
+
+8. Vérifier le retour avec `GET /api/curiosities`. La curiosité ajoutée par le commit `7e1c125` ne doit plus apparaître.
+
+
