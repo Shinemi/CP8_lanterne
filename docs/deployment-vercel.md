@@ -170,6 +170,8 @@ Vercel propose une fonction **Instant Rollback**.
 
 1. Ouvrir le dashboard du projet, onglet **Deployments**.
 
+![Instant rollback](../preuve/deployments.png)
+
 2. Repérer le déploiement stable précédent.
 
 3. Cliquer sur **Rollback**. Une boîte de dialogue s'ouvre.
