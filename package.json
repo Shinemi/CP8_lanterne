@@ -5,7 +5,7 @@
   "description": "API REST Express des curiosités locales Lanterne",
   "packageManager": "pnpm@11.19.0",
   "engines": {
-    "node": ">=20"
+    "node": ">=24"
   },
   "scripts": {
     "start": "node api/index.js",
