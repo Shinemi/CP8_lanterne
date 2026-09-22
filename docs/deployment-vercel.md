@@ -176,3 +176,5 @@ Vercel propose une fonction **Instant Rollback**.
 6. Cliquer sur **Continue**.
 7. Vercel réattribue le domaine de production vers le déploiement précédent. Aucun nouveau build n'est nécessaire.
 8. Vérifier le retour avec `GET /api/curiosities`. La curiosité ajoutée par le commit `7e1c125` ne doit plus apparaître.
+
+![Instant rollback](../preuve/rollback%20vercel.png)

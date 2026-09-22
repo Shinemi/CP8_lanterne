@@ -15,3 +15,12 @@ Toutes les requêtes ci-dessous sont des GET exécutées depuis le navigateur (o
 ## Note sur le statut 304 (/api/health)
 
 Le premier appel affiche 304 Not Modified plutôt que 200. Ce n'est pas une erreur : le navigateur a mis la réponse en cache et le serveur confirme que le contenu n'a pas changé, donc aucun corps de réponse n'est retransmis.
+
+**Health route result**
+![Health route result](../preuve/health-route.png)
+**Curiosities route result**
+![curiosities route result](../preuve/curiosities-route.png)
+**Curiosities filter route result**
+![curiosities filter route result](../preuve/curiosities-filtered-routes.png)
+**Curiosities slug route result**
+![curiosities slug route result](../preuve/curiosities-slug-route.png)
